@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.welcome-card h1 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.auth-card h2,
+.result-card h1 {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+.small-text {
+  margin-top: 15px;
+}
+
+.link-text {
+  color: #60a5fa;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 15px;
+  color: #93c5fd;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.topic-card {
+  padding: 25px;
+  border-radius: 16px;
+  color: white;
+  min-height: 180px;
+}
+
+.topic-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.topic-btn {
+  margin-top: 20px;
+}
+
+.taken-text {
+  margin-top: 10px;
+  color: #60a5fa;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.os-card {
+  background: #ec4899;
+}
+
+.dbms-card {
+  background: #8b5cf6;
+}
+
+.oops-card {
+  background: #10b981;
+}
+
+.sql-card {
+  background: #f59e0b;
+}
+
+.question-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+.question-card h3 {
+  margin-bottom: 15px;
+}
+
+.option-label {
+  display: block;
+  margin: 10px 0;
+}
+
+.submit-btn,
+.logout-btn {
+  margin-top: 20px;
+}
