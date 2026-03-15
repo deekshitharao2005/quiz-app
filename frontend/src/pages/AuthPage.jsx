@@ -24,9 +24,14 @@ export default function AuthPage() {
         localStorage.setItem("user", JSON.stringify(res.data.user));
         navigate("/topics");
       }
-    } catch (error) {
-      setMessage(error.response?.data?.message || "Something went wrong");
-    }
+   } catch (error) {
+  console.error("Auth error:", error);
+  setMessage(
+    error?.response?.data?.message ||
+    error?.message ||
+    "Something went wrong"
+  );
+}
   };
 
   return (
