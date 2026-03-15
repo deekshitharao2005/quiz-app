@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://quiz-app-backend.onrender.com/api",
+  baseURL: import.meta.env.VITE_API_URL || "https://quiz-app-backend-ybv8.onrender.com",
 });
 
 API.interceptors.request.use((config) => {
